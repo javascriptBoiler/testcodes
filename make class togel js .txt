@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 class="hid">What Can JavaScript Do?</h2>
+
+<p id="demo"class="hid">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="hide()">Click Me!</button>
+
+
+</body>
+<script>
+var click=0;
+var x;
+function hide(){
+var val = document.getElementsByClassName("hid");
+if(click==0){
+for(x=0;x<val.length;x++){
+	val[x].style.display="none";
+    click++;
+}}
+//alert('click');
+else{
+for(x=0;x<val.length;x++){
+	val[x].style.display="block";
+    click--;
+}}
+}
+</script>
+</html> 
